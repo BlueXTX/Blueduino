@@ -1,0 +1,12 @@
+language: csharp
+mono:
+  - latest
+
+dotnet: 5.0
+
+env:
+    global:
+        - DOTNET_CLI_TELEMETRY_OPTOUT: 1
+
+script:
+    - dotnet build Blueduino.sln -c Release
